@@ -1,0 +1,20 @@
+Ejercicio 3: función que permita imprimir todos los valores de una lista enlazada simple,pero con su orden invertido,realizando su recorrido en forma recursiva desde el último nodo ingresado hasta L.
+public Nodolist l(Nodolist y, int c) {
+        if 
+        (L == null){
+            L = new Nodolist(c);
+            return L;
+        }else{
+            Nodolist aux = L;
+            if(aux!=null){
+                aux.sig = new Nodolist(c);
+                return aux.sig;
+            }else{
+                return l(y, c);
+            }
+        }
+    }
+    
+    Archivo que permite ignorar los cambios que se realicen sobre determinados archivos dentro de un repositorio: .gitignore
+    
+    Comando que permite iniciar un repositorio de Git en cualquier carpeta:  git init
